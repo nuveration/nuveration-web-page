@@ -1,85 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuveration | Future of Tech</title>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script> window.chtlConfig = { chatbotId: "8499681565" } </script>
-<script async data-id="8499681565" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    <title>Nuveration | Inovação Digital</title>
+    <style>
+        /* Reset básico e Fontes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a; /* Azul escuro profundo */
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Contentor Principal */
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Estilo do Logo */
+        .logo {
+            width: 150px; /* Tamanho ajustado para visualização, mas o source é 512x512 */
+            height: auto;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 300;
+            color: #38bdf8;
+        }
+
+        /* Menu de Botões */
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            padding: 18px 30px;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Efeitos de Hover (PC) */
+        .btn:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            border-color: #38bdf8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+        }
+
+        /* Ajustes para PC (Ecrãs maiores) */
+        @media (min-width: 768px) {
+            .nav-links {
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+            
+            .btn {
+                flex: 1;
+                min-width: 160px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Footer simples */
+        footer {
+            margin-top: 4rem;
+            font-size: 0.8rem;
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
-    <div class="top-bar"></div>
 
-    <header>
-        <nav class="container">
-            <div class="logo-area">
-                <img src="LOGO.png" alt="Nuveration Logo" class="main-logo">
-                <span class="brand-name">NUVERATION</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#nuverat-phone">Nuverat-phone</a></li>
-                <li><a href="https://github.com/nuveration" target="_blank">GitHub</a></li>
-                <li><a href="#devs" class="btn-glow">Dev Portal</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <img src="LOGO.png" alt="Nuveration Logo" class="logo">
 
-    <section class="hero">
-        <div class="container">
-            <h1 class="glitch">NUVERATION</h1>
-            <h2>TECH FOR A BETTER WORLD</h2>
-            <p>Construímos o futuro com transparência e código aberto.</p>
-            <a href="#nuverat-phone" class="btn-main">Explorar Nuverat-phone</a>
+        <h1>NUVERATION</h1>
+
+        <div class="nav-links">
+            <a href="https://sonation.nuveration.com" class="btn">Sonation</a>
+            <a href="https://famorg.nuveration.com" class="btn">Famorg</a>
+            <a href="https://smartscroll.nuveration.com" class="btn">SmartScroll</a>
         </div>
-    </section>
+    </div>
 
-    <section id="nuverat-phone" class="project-highlight">
-        <div class="container grid-2">
-            <div class="project-text">
-                <span class="tag">FLAGSHIP PROJECT</span>
-                <h2>Nuverat-phone</h2>
-                <p>O smartphone que respeita a tua privacidade. Hardware modular e Software livre.</p>
-                <div class="feat-list">
-                    <div class="feat-item"><h3>🛡️ Privacy</h3><p>Sem trackers.</p></div>
-                    <div class="feat-item"><h3>🧩 Modular</h3><p>Fácil reparação.</p></div>
-                </div>
-                <a href="https://github.com/nuveration/nuverat-phone" class="btn-git">Ver Repositório</a>
-            </div>
-            <div class="phone-mockup"><div class="screen-glow"></div></div>
-        </div>
-    </section>
+    <footer>
+        &copy; 2024 Nuveration. Todos os direitos reservados.
+    </footer>
 
-    <section id="devs" class="dev-portal">
-        <div class="container">
-            <div id="auth-section" class="auth-box">
-                <h2>Developer Portal</h2>
-                <p>Conecta o teu GitHub para contribuir no ecossistema Nuveration.</p>
-                <button onclick="startDeviceLogin()" id="github-login-btn" class="btn-main">
-                    Ligar com GitHub Device Flow
-                </button>
-            </div>
-
-            <div id="dashboard-section" class="dashboard-container hidden">
-                <div class="dash-header">
-                    <h2>Dashboard: <span id="dev-name" class="highlight-cyan">Dev</span></h2>
-                    <button onclick="location.reload()" class="btn-outline">Sair</button>
-                </div>
-                <div class="contribution-hub">
-                    <div class="card">
-                        <h3>Tarefas em Aberto (Issues)</h3>
-                        <div id="issues-list" class="mini-list">A carregar...</div>
-                    </div>
-                    <div class="card">
-                        <h3>Consola Git</h3>
-                        <div id="git-log" class="terminal"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
